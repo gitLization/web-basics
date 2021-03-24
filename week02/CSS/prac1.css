@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>문서구조화</title>
 </head>
 <body>
-    <h1>제목: 문서구조화</h1>
-    <h2>부제: 실습일지</h2>
-    <p>Hello World!</p>
-    <br>
-    <a href="http://www.google.co.kr">구글</a>
+  <h1>제목: 문서구조화</h1>
+  <h2>부제: 실습일지</h2>
+  <p>Hello World!</p>
+  <br>
+  <a href="http://www.google.co.kr">구글</a>
 </body>
 </html>
