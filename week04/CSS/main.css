@@ -1,0 +1,42 @@
+/* BODY */
+body {
+    background: #f5f6f0;
+}
+
+.material-icons {
+    color: #f5f6f0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* HEADER */
+header{
+    background: #000;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>.material-icons{
+    position: absolute;
+}
+
+header #btn--open {
+    display: block;
+}
+
+header #btn--close {
+    display: none;
+}
+
+/* NAV */
+nav {
+    top: 60px;
+    width: 300px;
+    height: calc(100% - 60px);
+    background: blueviolet;
+    position: absolute;
+}
