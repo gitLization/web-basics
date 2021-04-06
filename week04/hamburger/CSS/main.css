@@ -10,25 +10,25 @@ body {
 }
 
 /* HEADER */
-header{
+header {
     background: #000;
     height: 60px;
     width: 100%;
-    position: fixed;
     display: flex;
+    position: fixed;
     align-items: center;
     padding: 0 15px;
 }
 
-header>.material-icons{
+header>.material-icons {
     position: absolute;
 }
 
-header #btn--open {
+header>.material-icons#btn--open {
     display: block;
 }
 
-header #btn--close {
+header>.material-icons#btn--close {
     display: none;
 }
 
