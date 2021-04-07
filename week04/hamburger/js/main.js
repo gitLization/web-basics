@@ -6,13 +6,14 @@ const menuCloseEl = document.getElementById('btn--close')
 const sideMenuEl = document.getElementById('side__menu')
 
 menuOpenEl.addEventListener("click", function() {
-    menuOpenEl.style.diaplay='none'
-    menuCloseEl.style.diaplay='block'
-    sideMenuEl.style.transform='translate(0)'
+    menuOpenEl.style.display = 'none'
+    menuCloseEl.style.display = 'block'
+    // 이부분이 잘 안먹히는 것 같은데
+    sideMenuEl.style.transform = 'translateX(0%)'
 })
 
 menuCloseEl.addEventListener("click", function() {
-    menuOpenEl.style.diaplay='block'
-    menuCloseEl.style.diaplay='none'
-    sideMenuEl.style.transform='translate(-100)'
+    menuOpenEl.style.display = 'block'
+    menuCloseEl.style.display = 'none'
+    sideMenuEl.style.transform = 'translateX(-100%)'
 })
