@@ -1,0 +1,8 @@
+/* 5.페이지 상단에 고정되어 있는 헤더
+*  HEADER */
+header {
+    background: whitesmoke;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
