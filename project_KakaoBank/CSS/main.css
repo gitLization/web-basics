@@ -20,13 +20,24 @@ header>.wrapper {
 
 body
 {
+    margin: 0;
+    padding: 0;
     background: #f5f6f0;
 }
 /*7. 메뉴바 구성*/
-.nav
-.nav a
+.nav {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+}
+.nav a {
+    text-decoration: none;
+}
 .nav ul
-.nav li
+.nav li {
+    list-style-type: none;
+}
 .nav div {
     margin: 0;
     padding: 0;
@@ -64,3 +75,25 @@ body
     border-radius: 3px 0 0 3px;
     border-left: none;
 }
+
+.nav > li > div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50px;
+    left : 0;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+    background: #f5f6f6;
+    border-radius: 0 0 3px 3px;
+}
+
+.nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
