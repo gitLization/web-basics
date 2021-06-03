@@ -1,0 +1,92 @@
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+/* HEADER */
+header {
+    background: red;
+    color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+}
+
+header> .wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    background: yellowgreen;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+header ul {
+    list-style: none;
+}
+
+header> .wrapper> .inner{
+    margin: 0 auto;
+    width: 70%;
+    height: 80px;
+    display: inline-block;
+    background: orange;
+    z-index: 10;
+}
+
+header li.logo {
+    /* float: left; */
+    width: 116px;
+    height: 80px;
+    display: inline-block;
+    background: yellow;
+    z-index: 100;
+}
+
+nav {
+    float: right;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+nav > ul > li.nav-item {
+    height: 80px;
+}
+
+nav > ul > li.nav-item > a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: .25rem;
+    padding: .5rem 1rem;
+    color: black;
+}
+
+nav > ul > li.nav-item > a:hover {
+    text-decoration: underline;
+}
+header li.nav-item a:last-child {
+
+}
