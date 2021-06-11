@@ -67,7 +67,6 @@ nav > ul {
 
 nav > ul > li {
     list-style: none;
-    padding-top: 15px;
 }
 
 nav > ul > li.nav-item {
@@ -77,6 +76,7 @@ nav > ul > li.nav-item {
 nav > ul > li.nav-item > a {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     text-decoration: none;
     text-align: center;
     margin: .25rem;
