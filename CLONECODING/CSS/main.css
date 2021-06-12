@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
 }
 
 li {
@@ -16,40 +17,54 @@ a {
     text-decoration: none;
 }
 
+h4:hover {
+    /* 헤더 메뉴에서 .mega-menu .inner-mega-menu > p > h4:hover를 하니까 반영이 안됐습니다..
+    그래서 위로 빼서 h4만 단독으로 처리했더니 되었습니다. h4를 다시 안쓰겠다는 각오로 약간의
+    편법(?)을 사용해봤습니다(´。＿。｀)*/
+    text-decoration: underline;
+}
+
+.material-icons-outlined {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 /* HEADER-VISIBLE */
 header {
-    box-sizing: border-box;
     width: 100%;
     height: 80px;
     position: fixed;
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     z-index: 3;
     background-color: yellowgreen;
+    border-bottom: 1px solid gray;
 }
 
 header .inner {
     width: 1080px;
     height: 80px;
+    padding: 0 20px;
     margin: 0 auto;
-    position: relative;
     background: violet;
     display: flex;
 }
 
 header .inner .main_gnb {
-    position: relative;
     flex: 1;
     text-align: right;
-
 }
+
 header .inner .main_gnb > ul {
     float: right;
 }
+
 header .inner .main_gnb > ul > li {
     float: left;
-
 }
 
 header .inner .main_gnb > ul > li > a {
@@ -57,6 +72,7 @@ header .inner .main_gnb > ul > li > a {
     display: inline-block;
     margin-top: 12px;
 }
+
 
 header .inner .main_gnb > ul > li > a:hover {
     text-decoration: underline;    
@@ -66,6 +82,203 @@ header .inner .main_gnb > ul > li > a:hover {
 
 header .inner .main_gnb > ul > li:last-child > a {
     background: #fede22;
+    height: 20px;
     border-radius: 22px;
+    text-decoration: none;
+    border-bottom: none;
 }
-/* HEADER-HIDDEN */
+
+/* HEADER-MEGA MENU */
+
+/* 다시 보이게 하는 부분 */
+.nav-item:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.mega-menu {
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    transition: all 0.4s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    /* 메가메뉴 등장 효과 부분!!중요함!! */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mega-menu .inner-mega-menu {
+    width: 20%;
+    float: left;
+}
+
+.mega-menu .inner-mega-menu > p {
+    padding: 10px 0;
+    transition: all 0.4s ease;
+}
+
+.mega-menu .inner-mega-menu > p > a:hover {
+    text-decoration: underline;
+}
+
+/* INTRO SECTION */
+main {
+    height: 880px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+main .intro_background {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    margin-bottom: 160px;
+    background-color: yellow;
+}
+
+main .intro_wrapper {
+    position: relative;
+    height: 880px;
+    width: 1200px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-image:url(https://www.kakaobank.com/static/images/web/renewal/main-bg2.png);
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+main .intro_background .intro_wrapper .intro_title {
+    position: absolute;
+    top: 215px;
+    width: 100%;
+    margin-left: 90px;
+    font-size: 45px;
+}
+
+main .intro_background .intro_wrapper .intro_sub {
+    position: absolute;
+    top: 360px;
+    width: 100%;
+    margin-left: 90px;
+    font-size: 20px;
+}
+
+main .intro_background .intro_wrapper .intro_btnList {
+    position: relative;
+    top: 430px;
+    margin-left: 90px;
+    height: 33px;
+}
+
+main .intro_background .intro_wrapper .intro_btnList > li{
+    margin-right: 10px;
+    
+    display: inline-block;
+    
+    text-align: center;
+    padding: 15px 0px;
+
+    font-size: 12px;
+}
+
+.intro_btnList > li > button {
+    border: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: none;
+}
+
+.imgGoogle {
+    display: inline-block;
+    padding-left: 30px;
+    background-image: url(/CLONECODING/images/playStore.png);
+
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+}
+
+.imgApple {
+    display: inline-block;
+    padding-left: 30px;
+
+    background-image: url(/CLONECODING/images/appStore.png);
+
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+}
+
+/* SECTION1 ACCOUNT SECTION */
+.section1{
+    height: 750px;
+    width: 100%;
+    position: relative;
+    background-color: green;
+}
+
+.section1 .background1 {
+    position: relative;
+    
+    margin: 0 auto;
+
+    height: 750px;
+    width: 1120px;
+
+    background-color: lightsalmon;
+}
+
+.section1 .background1 .wrapper1{
+    position: relative;
+    float: left;
+
+    height: 680px;
+    width: 480px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-withdrawal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section1 .background1 .sec1_title{
+    position: relative;
+    float: left;
+    top: 215px;
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+.section1 .background1 .sec1_sub{
+    position: relative;
+    float: left;
+    top: 280px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.section1 .background1 .sec1_btn {
+    position: relative;
+    top: 340px;
+    margin-left: 100px;
+    
+    border: none;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section1 .background1 .sec1_btn:hover {
+    text-decoration: underline;
+}
+
+<!-- SECTION2. /DEPOSIT&SAVINGS SECTION -->

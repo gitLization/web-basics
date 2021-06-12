@@ -9,10 +9,13 @@
     <!-- 구글폰트: 나눔고딕 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- main.css -->
     <link rel="stylesheet" href="CSS/main.css">
     <title>Document</title>
 </head>
+    <!-- HEADER -->
     <header>
         <div class="inner">
             <div id= "logo">
@@ -24,17 +27,180 @@
                         margin-top: 28px;" alt="텍스트 로고">
                 </a>
             </div>
+            <!-- 메가 드롭다운 메뉴 참고영상:https://www.youtube.com/watch?v=nZvKX_nO_qM
+                 container=inner / nav-bar=main_gnb / li = nav-item -->
             <nav class=main_gnb>
                 <ul>
-                    <li class="nav-item"><a href="#">은행소개</a></li>
-                    <li class="nav-item"><a href="#">상품안내</a></li>
-                    <li class="nav-item"><a href="#">고객센터</a></li>
+                    <li class="nav-item"><a href="#">은행소개</a>
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>카카오뱅크</h4></a></p>
+                                <p><a href="#">브랜드</a></p>
+                                <p><a href="#">주주사 소개</a></p>
+                                <p><a href="#">오시는 길</a></p>
+                                <p><a href="#">제휴문의</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>윤리경영</h4></a></p>
+                                <p><a href="#">윤리강령</a></p>
+                                <p><a href="#">임직원행동기준</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>투자정보</h4></a></p>
+                                <p><a href="#">공시정보</a></p>
+                                <p><a href="#">재무정보</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>인재채용</h4></a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>새소식</h4></a></p>
+                                <p><a href="#">공지사항</a></p>
+                                <p><a href="#">보도자료</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#">상품안내</a>
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>예적금</h4></a></p>
+                                <p><a href="#">입출금통장</a></p>
+                                <p><a href="#">모임통장</a></p>
+                                <p><a href="#">세이프박스</a></p>
+                                <p><a href="#">저금통</a></p>
+                                <p><a href="#">정기예금</a></p>
+                                <p><a href="#">자유적금</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>대출</h4></a></p>
+                                <p><a href="#">비상금대출</a></p>
+                                <p><a href="#">마이너스 통장대출</a></p>
+                                <p><a href="#">신용대출</a></p>
+                                <p><a href="#">개인사업자 대출</a></p>
+                                <p><a href="#">전월세보증금 대출</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>서비스</h4></a></p>
+                                <p><a href="#">내 신용정보</a></p>
+                                <p><a href="#">해외송금 보내기</a></p>
+                                <p><a href="#">해외송금 받기</a></p>
+                                <p><a href="#">프렌즈 체크카드</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>제휴서비스</h4></a></p>
+                                <p><a href="#">증권사 주식계좌</a></p>
+                                <p><a href="#">제휴 신용카드</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>mini</h4></a></p>
+                                <p><a href="#">카카오뱅크 mini</a></p>
+                                <p><a href="#">mini 카드</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#">고객센터</a>
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>이용안내</h4></a></p>
+                                <p><a href="#">자주 묻는 질문</a></p>
+                                <p><a href="#">이용시간 안내</a></p>
+                                <p><a href="#">ATM 이용안내</a></p>
+                                <p><a href="#">금리안내</a></p>
+                                <p><a href="#">수수료안내</a></p>
+                                <p><a href="#">상담안내</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>상담하기</h4></a></p>
+                                <p><a href="#">고객의 소리</a></p>
+                                <p><a href="#">1:1 문의</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>소비자보호</h4></a></p>
+                                <p><a href="#">소비자보호체계</a></p>
+                                <p><a href="#">소비자보호 우수사례</a></p>
+                                <p><a href="#">전자민원</a></p>
+                                <p><a href="#">소비자보호공시</a></p>
+                                <p><a href="#">민원사무편람</a></p>
+                                <p><a href="#">금융정보</a></p>
+                                <p><a href="#">금융사기 관련공시</a></p>
+                                <p><a href="#">보안취약점 신고 안내</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>증명서</h4></a></p>
+                                <p><a href="#">나의 증명서 발급 내역</a></p>
+                                <p><a href="#">증명서 진위 확인</a></p>
+                            </div>
+
+                            <div class="inner-mega-menu">
+                                <p><a href="#"><h4>약관 º 서식</h4></a></p>
+                                <p><a href="#">약관</a></p>
+                                <p><a href="#">서식</a></p>
+                                <p><a href="#">상품설명서</a></p>
+                                <p><a href="#">상품공시</a></p>
+                            </div>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="#">이벤트</a></li>
                     <li class="nav-item"><a href="#">서류 제출하기</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- MAIN SECTION -->
+    <main id="intro_about">
+        <div class="intro_background">   
+            <div class="intro_wrapper">
+                <p><h3 class="intro_title">같지만 다른 은행<br>카카오뱅크</h3></p>
+                <p><h1 class="intro_sub">일상에서 더 쉽게, 더 자주 만나는 은행<br>카카오뱅크가 한번 더 편리해졌습니다.</h1></p>
+                <ul class="intro_btnList">
+                    <li><button><span class="imgGoogle">
+                    <a href="#"><h2>Google Play</h2></a></span></button></li>
+                    <li><button><span class="imgApple">
+                    <a href="#"><h2>App Store</h2></a></span></button></li>
+                </ul>
+            </div>
+        </div>         
+    </main>
+    <!-- ACCOUNT SECTION -->
+    <section class="section1">
+        <div class="background1">
+                <div class="wrapper1"></div>
+                <p><h3 class="sec1_title">모바일로 더 손쉬운<br>계좌개설, 간편한 이체</h3></p>
+                <p><h1 class="sec1_sub">인증서, OTP 없이 계좌 개설이 간편합니다.<br>
+                    여러 건의 이체도 몇 번의 터치로 쉽게 보낼 수 있습니다.</h1></p>
+                <button class="sec1_btn" onclick="href='#'">카카오뱅크 입출금통장
+                    <span class="material-icons-outlined">chevron_right</span>
+                </button>
+        </div>
+    </section>
+
+    <!-- DEPOSIT&SAVINGS SECTION -->
+    <section class="section2">
+        <div class="sec2_background">   
+            <div class="sec2_wrapper">
+                <p><h3 class="sec2_title">우대조건 없이<br>합리적인 예금과 적금</h3></p>
+                <p><h1 class="sec2_sub">기대했던 금리와 다르게 복잡한 우대조건에 실망한 적이 있었나요?<br>
+                카카오뱅크의 예금, 적금은 숨겨진 우대조건 없이 누구에게나 편리하고 합리적입니다.</h1></p>
+                <ul class="sec2_btnList">
+                    <li><button>정기예금<span class="material-icons-outlined">chevron_right</span></button></li>
+                    <li><button>자유적금<span class="material-icons-outlined">chevron_right</span></button></li>
+                </ul>
+            </div>
+        </div>         
+    </section>
 <body>
     
 </body>
