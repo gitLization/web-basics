@@ -527,7 +527,15 @@ sec_btn: 부가설명 아래의 버튼
     width: 100%;
     height: 475px;
 }
+.section7 .sec7_slider .slider_img {
+    position: absolute;
+    margin: 0 auto;
 
+    height: 660px;
+    width: 450px;
+
+    background-color: white;
+}
 .section7 .sec7_slider .sec7_sliderLeft {
     position: relative;
 
