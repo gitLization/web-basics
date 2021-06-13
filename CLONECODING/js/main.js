@@ -1,16 +1,15 @@
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
+function MySlider1__init() {
+    $('.my-slider-1 > .owl-carousel').owlCarousel({
+      responsive:{
         0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+          items:3
         }
-    }
-})
+      },
+      loop:true,
+      dots:false,
+      nav:true,
+      navText: ['좌', '우'],
+      center:true
+    });
+  }
+  MySlider1__init();
