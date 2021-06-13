@@ -25,7 +25,20 @@ h4:hover {
 }
 
 .material-icons-outlined {
-    position: relative;
+    font-weight: normal;
+    font-style: normal;
+
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-weight: normal;
+    font-style: normal;
+    
+    display: inline-block;
     color: black;
     font-size: 15px;
     cursor: pointer;
@@ -217,15 +230,29 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-size: 21px 21px;
 }
 
+/* 색션 클래스명 설명(비슷한 부분은 한가지의 클래스로 구현하고자 했습니다)
+
+section: 왼쪽에 png가 있고 오른쪽에 글귀와 버튼이 있음
+background: 1200*750의 너비를 가진 중앙 정렬을 위한 배경
+sec_title: 오른쪽의 굵은 제목 글씨 | 
+sec_sub: 제목 아래의 부가 설명
+sec_btn: 부가설명 아래의 버튼 
+
+*2가 붙은 클래스명은 왼쪽 오른쪽이 반대의 경우입니다.
+*정리를 안하면 css에서 어떤 색션의 구조인지 확인이 쉽지만
+코딩하는 입장에서는 같은걸 여러번 하다보니 정리가 필요할 것 같다고 생각했습니다:)
+개인적인 입장이라서 맞는지는 모르겠습니다...
+*/
+
 /* SECTION1 ACCOUNT SECTION */
-.section1{
+.section{
     height: 750px;
     width: 100%;
     position: relative;
     background-color: green;
 }
 
-.background1 {
+.background {
     position: relative;
     
     margin: 0 auto;
@@ -237,7 +264,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-color: lightsalmon;
 }
 
-.section1 .background1 .wrapper1{
+.section .background .wrapper1{
     position: relative;
     float: left;
 
@@ -249,7 +276,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-size: contain;
 }
 
-.sec1_title{
+.sec_title{
     position: relative;
     float: left;
     top: 200px;
@@ -257,7 +284,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 45px;
 }
 
-.sec1_sub{
+.sec_sub{
     position: relative;
     float: left;
     top: 240px;
@@ -265,7 +292,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 20px;
 }
 
-.sec1_btn {
+.sec_btn {
     position: relative;
     top: 280px;
     margin-left: 100px;
@@ -278,7 +305,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 15px;
 }
 
-.sec1_btn:hover {
+.sec_btn:hover {
     text-decoration: underline;
 }
 
@@ -299,7 +326,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     margin: 0 auto;
 }
 
-.section2 .sec2_background .sec2_wrapper {
+.sec2_background .sec2_wrapper {
     position: relative;
     float: right;
 
@@ -311,7 +338,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-size: contain;
 }
 
- .sec2_title {
+.sec2_title {
     position: absolute;
     float: left;
     top: 150px;
@@ -319,7 +346,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 45px;
 }
 
- .sec2_sub{
+.sec2_sub{
     position: absolute;
     float: left;
     top: 300px;
@@ -327,14 +354,14 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 20px;
 }
 
-.section2 .sec2_background .sec2_btnList{
+.sec2_btnList{
     position: relative;
     top: 400px;
     margin-left: 90px;
     height: 33px;
 }
 
-.section2 .sec2_background .sec2_btnList > li{
+.sec2_btnList > li{
     margin-right: 10px;
     display: inline-block;
     
@@ -367,7 +394,7 @@ main .intro_background .intro_wrapper .intro_btnList > li{
 }
 
 /* SECTION3 MEETING ACCOUNT SECTION */ 
-.section1 .background1 .wrapper3{
+.section .background .wrapper3{
     position: relative;
     float: left;
 
@@ -429,7 +456,6 @@ main .intro_background .intro_wrapper .intro_btnList > li{
 
 /* SECTION5 OVERSEAS REMITTANCE SECTION */
 .background5 {
-    
     position: relative;
     
     margin: 0 auto;
@@ -450,7 +476,70 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     height: 715px;
     width: 400px;
 
+    overflow: hidden;
     background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-foreignRemittance.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* SECTION7 FRIENDS CHECK CARD */
+.section7 {
+    position: relative;
+    height: 1062px;
+    width: 100%;
+    background-color: palevioletred;
+
+    padding-top: 150px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.section7 > h3 {
+    position: relative;
+    /* top: 150px; */
+    font-size: 45px;
+}
+
+.section7 > h1 {
+    position: relative;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.section7 .sec7_btn {
+    position: relative;
+    
+    margin-top: 24px;
+    width: 258px;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section7 .sec7_slider {
+    position: relative;
+    margin: 50px auto;
+
+    width: 100%;
+    height: 475px;
+}
+
+.section7 .sec7_slider .sec7_sliderLeft {
+    position: relative;
+
+    top: 150px;
+    font-size: 20px;
+}
+
+.section7 .sec7_slider .sec7_sliderRight {
+    position: relative;
+
+    top: 150px;
+    font-size: 20px;
+
+    float: right;
 }
