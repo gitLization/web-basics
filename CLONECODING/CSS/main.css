@@ -225,14 +225,15 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-color: green;
 }
 
-.section1 .background1 {
+.background1 {
     position: relative;
     
     margin: 0 auto;
-
+    padding-top: 50px;
     height: 750px;
-    width: 1120px;
+    width: 1200px;
 
+    overflow: hidden;
     background-color: lightsalmon;
 }
 
@@ -248,25 +249,25 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     background-size: contain;
 }
 
-.section1 .background1 .sec1_title{
+.sec1_title{
     position: relative;
     float: left;
-    top: 215px;
+    top: 200px;
     margin-left: 100px;
     font-size: 45px;
 }
 
-.section1 .background1 .sec1_sub{
+.sec1_sub{
     position: relative;
     float: left;
-    top: 280px;
+    top: 240px;
     margin-left: 100px;
     font-size: 20px;
 }
 
-.section1 .background1 .sec1_btn {
+.sec1_btn {
     position: relative;
-    top: 340px;
+    top: 280px;
     margin-left: 100px;
     
     border: none;
@@ -277,8 +278,179 @@ main .intro_background .intro_wrapper .intro_btnList > li{
     font-size: 15px;
 }
 
-.section1 .background1 .sec1_btn:hover {
+.sec1_btn:hover {
     text-decoration: underline;
 }
 
-<!-- SECTION2. /DEPOSIT&SAVINGS SECTION -->
+/* SECTION2 DEPOSIT&SAVING */
+.section2 {
+    position: relative;
+    height: 750px;
+    width: 100%;
+    background-color: slateblue;
+}
+
+.section2 .sec2_background {
+    position: relative;
+    height: 100%;
+    width: 1200px;
+    background-color: blue;
+
+    margin: 0 auto;
+}
+
+.section2 .sec2_background .sec2_wrapper {
+    position: relative;
+    float: right;
+
+    height: 722px;
+    width: 409px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-savings.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ .sec2_title {
+    position: absolute;
+    float: left;
+    top: 150px;
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+ .sec2_sub{
+    position: absolute;
+    float: left;
+    top: 300px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.section2 .sec2_background .sec2_btnList{
+    position: relative;
+    top: 400px;
+    margin-left: 90px;
+    height: 33px;
+}
+
+.section2 .sec2_background .sec2_btnList > li{
+    margin-right: 10px;
+    display: inline-block;
+    
+    text-align: center;
+    padding: 15px 0px;
+
+    font-size: 12px;
+}
+
+.sec2_btnList > li > button {
+    border: none;
+    width: 158px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: none;
+}
+
+.section2 .sec2_background .sec2_underimg {
+    position: relative;
+    height: 104px;
+    width: 440px;
+
+    top: 500px;
+    margin-left: 90px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-savings-money.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SECTION3 MEETING ACCOUNT SECTION */ 
+.section1 .background1 .wrapper3{
+    position: relative;
+    float: left;
+
+    height: 600px;
+    width: 460px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-moim.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SECTION4 26WEEK SAVING SECTION */
+.section4 {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    background-color: slateblue;
+}
+
+.section4 .sec4_background {
+    position: relative;
+    height: 100%;
+    width: 1200px;
+    background-color: blue;
+
+    margin: 0 auto;
+}
+
+.section4 .sec4_background .wrapper4{
+    position: relative;
+    float: right;
+
+    top: 100px;
+    height: 500px;
+    width: 400px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-26weeks.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section4 .sec4_background .sec4_btn {
+    position: relative;
+    top: 380px;
+    margin-left: 100px;
+    
+    width: 300px;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section4 .sec4_background .sec4_btn:hover {
+    text-decoration: underline;
+}
+
+/* SECTION5 OVERSEAS REMITTANCE SECTION */
+.background5 {
+    
+    position: relative;
+    
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 750px;
+    width: 1200px;
+
+    overflow: hidden;
+    background-image: url(https://www.kakaobank.com/static/images/web/home_map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wrapper5 {
+    position: relative;
+    float: left;
+
+    height: 715px;
+    width: 400px;
+
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-foreignRemittance.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
