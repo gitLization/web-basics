@@ -71,6 +71,7 @@ header .inner {
     padding: 0 20px;
     margin: 0 auto;
     background: #fff;
+    border-bottom: 1px solid gray;
     display: flex;
 }
 
@@ -158,7 +159,7 @@ main {
     height: 880px;
     width: 100%;
     position: relative;
-    background-color: #fede22;
+    background-color: white;
 }
 
 main .intro_background {
@@ -166,12 +167,12 @@ main .intro_background {
     height: 720px;
     width: 100%;
     margin-bottom: 160px;
-    background-color: yellow;
+    background-color: #fede22;
 }
 
 main .intro_wrapper {
     position: relative;
-    height: 880px;
+    height: 884px;
     width: 1200px;
     display: flex;
     background-image:url(https://www.kakaobank.com/static/images/web/renewal/main-bg2.png);
